@@ -1,0 +1,14 @@
+.site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.site-content {
+  flex: 1 0 auto;
+}
+
+.page-footer {
+  margin: 0;
+  padding-top: 0px !important;
+} 

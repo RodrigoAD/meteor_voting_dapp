@@ -1,0 +1,44 @@
+<template name="candidates">
+
+    <div class="section blue lighten-2 white-text" id="index-banner">
+        <div class="container">
+            <div class="row center">
+                <div class="col s12 m10 offset-m1 l8 offset-l2">
+                    <h1 class="header center-on-small-only grey-text text-lighten-4">Meteor Dapp</h1>
+                    <h4 class ="center-on-small-only light grey-text text-lighten-5">Voting System over Ethereum</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="container">
+            <div class="row center">
+                <div class="col s12 m10 offset-m1 l8 offset-l2">
+
+                    <table class="striped centered">
+                        <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Votes</th>
+                            <th>Vote!</th>
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                            {{ #each candidate in candidates }}
+                                <tr class="jsCandidate" value="{{ candidate.name }}">
+                                    <td class="jsName">{{ candidate.name }}</td>
+                                    <td>{{ candidate.votes }}</td>
+                                    <td><a class="btn-floating blue lighten-2 jsVote"><i class="material-icons">add</i></a></td>
+                                </tr>
+                            {{ /each }}
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</template>
