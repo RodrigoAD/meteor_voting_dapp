@@ -19,7 +19,7 @@
                     <table class="striped centered">
                         <thead>
                         <tr>
-                            <th>Name</th>
+                            <th>Names</th>
                             <th>Votes</th>
                             <th>Vote!</th>
                         </tr>
@@ -41,4 +41,8 @@
         </div>
     </div>
     
+
+    {{#each item in hola}}
+        <li>{{item.name}}</li>
+    {{/each}}
 </template>

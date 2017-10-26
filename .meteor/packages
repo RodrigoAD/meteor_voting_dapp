@@ -34,3 +34,5 @@ aslagle:reactive-table
 http@1.2.10
 fourseven:scss@3.13.0
 poetic:materialize-scss@1.2.10
+
+frozeman:persistent-minimongo2
